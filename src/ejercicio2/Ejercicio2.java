@@ -2,6 +2,7 @@ package ejercicio2;
 
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
+
 public class Ejercicio2 {
 
     public static void main(String[] args) {
@@ -15,11 +16,11 @@ public class Ejercicio2 {
             passwords[i] = new Password(longitudContra);
             passwords[i].generarPassword();
             fuerte[i] = passwords[i].esFuerte();
-            cadena = cadena+"Contraseña "+Password.getContador()+":\t"+passwords[i].getContraseña()+"\t"+fuerte[i]+"\n";
+            cadena = cadena + "Contraseña " + Password.getContador() + ":\t" + passwords[i].getContraseña() + "\t" + fuerte[i] + "\n";
             System.out.println(fuerte[i]);
             System.out.println("\n");
         }
         hoja.setText(cadena);
-        JOptionPane.showMessageDialog(null,hoja);
+        JOptionPane.showMessageDialog(null, hoja);
     }
 }
